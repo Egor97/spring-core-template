@@ -17,7 +17,7 @@ public class RepositoryConfiguration {
     }
 
     @Bean
-    public LinkedListItemRepository getLinkedListItemRepository() {
+    public LinkedListItemRepository linkedListItemRepository() {
         return new LinkedListItemRepository(new LinkedList<>());
     }
 }

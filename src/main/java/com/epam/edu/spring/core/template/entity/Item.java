@@ -45,4 +45,14 @@ public class Item {
     public void setColor(Color color) {
         this.color = color;
     }
+
+    @Override
+    public String toString() {
+        return "Item{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", price=" + price +
+                ", color=" + color +
+                '}';
+    }
 }

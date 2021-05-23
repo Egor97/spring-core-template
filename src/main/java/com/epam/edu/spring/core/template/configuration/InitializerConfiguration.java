@@ -11,7 +11,7 @@ public class InitializerConfiguration {
     @Lazy
     @Scope("prototype")
     @Bean
-    public ColorFactory getColorFactory() {
+    public ColorFactory colorFactory() {
         return new ColorFactory();
     }
 }

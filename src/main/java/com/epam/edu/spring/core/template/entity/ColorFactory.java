@@ -8,12 +8,12 @@ import java.util.Random;
 @Component
 public class ColorFactory implements FactoryBean<Color> {
 
-    public Color getColor() throws Exception {
+    public Color getColor() {
         return getObject();
     }
 
     @Override
-    public Color getObject() throws Exception {
+    public Color getObject() {
         return Color.values()[new Random().nextInt(Color.values().length)];
     }
 
